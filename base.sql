@@ -215,6 +215,12 @@ INSERT INTO users (name, safe_name, email, pw, permissions, country, activated)
 VALUES ('BanchoBot', 'banchobot', 'bot@example.com', '------------------------------------------------------------', 21, 'Oceania', true),
        ('peppy', 'peppy', 'pe@ppy.sh', '$2b$12$W5ppLwlSEJ3rpJQRq8UcX.QA5cTm7HvsVpn6MXQHE/6OEO.Iv4DGW', 21, 'Australia', true);
 
+INSERT INTO stats (id, mode)
+VALUES (1, 0),
+       (1, 1),
+       (1, 2),
+       (1, 3);
+
 INSERT INTO channels (name, topic, read_permissions, write_permissions)
 VALUES ('#osu', 'General discussion.', 1, 1),
        ('#highlight', 'Public announcements.', 1, 8),
